@@ -63,6 +63,11 @@ module.exports = function (/* ctx */) {
       // https://quasar.dev/quasar-cli/handling-webpack
       extendWebpack (cfg) {
       },
+        
+      env: {
+          VUE_APP_API_BASE_URL: process.env.VUE_APP_API_BASE_URL,
+          VUE_APP_FACEBOOK_APP_ID: process.env.VUE_APP_FACEBOOK_APP_ID
+      },
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
